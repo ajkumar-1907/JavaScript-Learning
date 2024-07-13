@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 1rem;
+    background-color: #ffbe76;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note{
+    width: 21rem;
+    height: 23rem;
+    background: white;
+    margin: 1rem;
+    margin-top: 4rem;
+}
+
+.toolbar{
+    width: 100%;
+    background-color: #30336b;
+    padding: 0.7rem;
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.toolbar i{
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.note textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 0.75rem;
+}
+
+.note textarea:focus{
+    border: 0;
+    outline: 0;
+}
+
+
+
+
+
+#add-note-btn{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    background-color: #130f40;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
