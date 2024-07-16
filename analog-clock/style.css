@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f2f30;
+}
+
+.container{
+    position: relative;
+}
+
+.clock{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background: #000000;
+    border-radius: 50%;
+    box-shadow: 10px 50px 70px rgba(98, 96, 98, 0.177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(95, 93, 93, 0.803);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.clock span{
+    position: absolute;
+    inset: 20px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock span b{
+    font-size: 1.7em;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.036);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.circle2{
+    width: 240px;
+    height: 240px;
+}
+
+.circle3{
+    width: 180px;
+    height: 180px;
+}
+
+.circle i{
+    position: absolute;
+    width: 6px;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+
+.circle:nth-child(1) i{
+    width: 2px;
+}
+
+.circle:nth-child(2) i{
+    width: 4px;
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 20px var(--clr);
+}
