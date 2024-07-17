@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+.imageforcolorcode {
+    margin: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.imageforcolorcode img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imageforcolorcode:hover {
+    transform: scale(1.05);
+}
+
+#colorInfo {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#button {
+    margin: 20px;
+}
+
+#button button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#button button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #f5f7fa;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[readonly] {
+    background-color: #eaeaea;
+    cursor: default;
+}
